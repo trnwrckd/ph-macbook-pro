@@ -1,20 +1,17 @@
+/* product image hover effect */
 .img-hover{
     transition: transform 1.2s;
 }
 .img-hover:hover{
     transform: scale(1.05);
 }
-button{
-    margin: 5px 0;
-}
 .price-container{
     width: 50%;
 }
 hr{
     background-color: rgb(6, 6, 175);   
-    height: 1.5px;
 }
-.thick-hr{
+.thick-hr{ 
     height: 2px !important;
     background-color: black;
     opacity: 100;

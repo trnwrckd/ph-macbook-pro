@@ -1,0 +1,11 @@
+.price-container{
+    width: 40%;
+}
+hr{
+    background-color: rgb(9, 9, 170);   
+}
+.thick-hr{
+    height: 2px !important;
+    background-color: black;
+    opacity: 100;
+}

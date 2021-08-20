@@ -10,10 +10,109 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- custom styles -->
     <link rel="stylesheet" href="styles/style.css">
-    <title>Mac Book Pro</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="assets/appleLogo.png" />
+    <title>MacBook Pro</title>
 </head>
 
 <body>
+
+    <main>
+        <section class="container pt-5">
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+                <!-- product image -->
+                <div class="col">
+                    <div><img class="img-fluid" src="assets/MacBookPro-M1.png" alt="" srcset=""></div>
+                </div>
+
+                <section class="col">
+                    <!-- text and specification choices -->
+                    <div class="py-3">
+                        <h2>Customize your 13‑inch <span class="fw-bold text-danger">MacBook Pro</span> with Apple M1
+                            Chip</h2>
+                        <p class="pt-2 pb-4">
+                            Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU,
+                            and
+                            16-core Neural Engine 8GB unified memory, 256GB SSD storage,Two Thunderbolt / USB 4
+                            ports,Magic
+                            Mouse,
+                            Magic Keyboard - US English
+                        </p>
+
+                        <!-- memory options -->
+                        <div class="pb-4">
+                            <h4> Memory</h4>
+                            <button id="mem-8GB" class="btn btn-outline-dark memory-option">8GB Unified Memory</button>
+                            <button id="mem-16GB" class="btn btn-outline-dark memory-option">16GB Unified
+                                Memory</button>
+                        </div>
+
+                        <!-- storage options -->
+                        <div class="pb-4">
+                            <h4> Storage</h4>
+                            <button id="storage-opt-1" class="btn btn-outline-dark">256GB SSD Storage</button>
+                            <button id="storage-opt-2" class="btn btn-outline-dark">512GB SSD Storage</button>
+                            <button id="storage-opt-3" class="btn btn-outline-dark">1TB SSD Storage</button>
+                        </div>
+
+                        <!-- delivery options -->
+                        <div class="pb-4">
+                            <h4> Choose your delivery option</h4>
+                            <button id="del-opt-1" class="btn btn-outline-dark">Friday, Aug 25 FREE Prime
+                                Delivery</button>
+                            <button id="del-opt-2" class="btn btn-outline-dark">Friday, Aug 21 Delivery Charge
+                                $20</button>
+                        </div>
+                    </div>
+                    <!-- computed price section  -->
+                    <div class="price-container border-outline-warning">
+                        <div class="fw-bold d-flex justify-content-between">
+                            <span> Best Price</span>
+                            <span> $1299</span>
+                        </div>
+                        <hr>
+                        <!-- memory cost update -->
+                        <div class="fw-bold d-flex justify-content-between">
+                            <span> Extra Memory Cost</span>
+                            <span>$<span id="memory-cost">0</span></span>
+                        </div>
+                        <hr>
+                        <div class="fw-bold d-flex justify-content-between">
+                            <span> Extra Storage Cost</span>
+                            <span>$<span id="storage-cost">0</span></span>
+                        </div>
+                        <hr>
+                        <div class="fw-bold d-flex justify-content-between">
+                            <span> Delivery Charge</span>
+                            <span>$<span id="delivery-cost">0</span></span>
+                        </div>
+                        <hr class="thick-hr">
+                        <div class="fw-bold d-flex justify-content-between">
+                            <span> Total Price</span>
+                            <span>$<span id="gross-total">1299</span></span>
+                        </div>
+                        <hr>
+                        <div class="py-2">
+                            <span class="fw-bold">Add Promo Code</span>
+                            <div class="d-flex pt-2">
+                                <input class="form-control" type="text" name="" id="promo-input">
+                                <button id="promo-submit-btn" class="ms-2 btn btn-danger">Apply</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-center">
+                <h1>
+                    Total : $<span id="net-total">1299</span>
+                </h1>
+
+            </div>
+        </section>
+
+    </main>
 
     <!-- custom script -->
     <script src="js/main.js"></script>

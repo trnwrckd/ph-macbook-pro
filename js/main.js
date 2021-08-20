@@ -1,9 +1,11 @@
+// parseInt(innerText)
 function textToInt(id) {
     const textField = document.getElementById(id);
     const number = parseInt(textField.innerText);
     return number;
 }
 
+// computes gross total based on options selected
 function computeGrossTotal() {
     const memoryCost = textToInt("memory-cost")
     const storageCost = textToInt("storage-cost")
@@ -18,26 +20,28 @@ function computeGrossTotal() {
     return grossTotal;
 }
 
+// update sub cost for each option selected
 function updateSubCost(id, amount) {
     const field = document.getElementById(id);
     field.innerText = amount;
     computeGrossTotal();
 }
 
+// 20% discount on mathced promocode
 function checkPromoCode(promoCode) {
     const netTotalField = document.getElementById("net-total");
     let grossTotal = computeGrossTotal();
     let netTotal;
     if (promoCode.toLowerCase() == 'stevekaku') {
         netTotal = grossTotal - ((20 * grossTotal) / 100);
-    }
-    else {
+    } else {
         netTotal = grossTotal;
     }
 
     netTotalField.innerText = netTotal;
 }
 
+// specification option buttons
 document.getElementById("mem-8GB").addEventListener("click", function () {
     updateSubCost("memory-cost", 0)
 });
@@ -60,8 +64,8 @@ document.getElementById("del-opt-2").addEventListener("click", function () {
     updateSubCost("delivery-cost", 20)
 });
 
-// promo code 
 
+// promo code  button
 document.getElementById("promo-submit-btn").addEventListener("click", function () {
     const promoField = document.getElementById("promo-input");
     checkPromoCode(promoField.value);

@@ -1,11 +1,28 @@
+.img-hover{
+    transition: transform 1.2s;
+}
+.img-hover:hover{
+    transform: scale(1.05);
+}
+button{
+    margin: 5px 0;
+}
 .price-container{
-    width: 40%;
+    width: 50%;
 }
 hr{
-    background-color: rgb(9, 9, 170);   
+    background-color: rgb(6, 6, 175);   
+    height: 1.5px;
 }
 .thick-hr{
     height: 2px !important;
     background-color: black;
     opacity: 100;
+}
+
+/* media query */
+@media  only screen and (max-width:1024px){
+    .price-container{
+        width: 100%;
+    }
 }
